@@ -326,7 +326,7 @@ border-left: 1px solid white;
 #Performance .texto a
 {
   text-align: center;
-    width: 80%;
+    width: 30%;
     display: flex;
     text-decoration: none;
     justify-content: center;
@@ -694,11 +694,11 @@ border-left: 1px solid black;
   height: 50px;
   font-size: 12px
 }
-#Performance .frontal
+.landscape #Performance .frontal
 {
   display: none;
 }
-#Performance .trasera
+.landscape #Performance .trasera
 {max-width: 75px;}
 #estacionamiento,
 #Tecnology
