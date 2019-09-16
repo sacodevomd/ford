@@ -46,4 +46,16 @@ $(document).ready(function(){
      }
 
 
+     $('#animated-example').click(function() {
+        $('html, body').animate({
+          scrollTop: $("#Performance").offset().top
+        }, 1000)
+      });
+
+      $('a').click(function() {
+        $('html, body').animate({
+          scrollTop: $("#Contact").offset().top
+        }, 1000)
+      });
+
 });
