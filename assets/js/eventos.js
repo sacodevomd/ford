@@ -35,9 +35,11 @@ $(document).ready(function(){
             if(window.innerHeight > window.innerWidth){
                 $("#slide .fondo1").attr("src","./assets/images/seccion01/fondo1.jpg");
                 $("#conexion > div > img").attr("src","   ./assets/images/seccion05/foto05.jpg");
+                $("body").addClass("landscape");
             }else{
             $("#slide .fondo1").attr("src"," ./assets/mobil/sec01.jpg");
             $("#conexion > div > img").attr("src"," ./assets/mobil/sec06.jpg");
+            $(".landscape").removeClass("landscape");
             }
         });
 
