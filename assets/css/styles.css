@@ -57,7 +57,7 @@ background:red;
   position: relative;
   margin:0 auto;
   width: 400px !important;
-  max-width: 950%;
+  max-width: 100%;
 }
 #formcontacto>button[type=submit]{
   width: 100% !important;
@@ -270,6 +270,7 @@ border-left: 1px solid white;
   text-align: center;
     width: 80%;
     display: flex;
+    text-decoration: none;
     justify-content: center;
     align-items: center;
     border: 1px solid white;
@@ -352,4 +353,298 @@ section#estacionamiento > div > img {
 #Tecnology img
 {
 width: 100%;
+}
+#Tecnology .texto h1
+{
+  font-size: 16px;
+    font-weight: 900;
+    text-align: left;
+}
+#Tecnology .texto p{
+  font-size: 12px;
+  text-align: justify
+}
+#Tecnology .texto ul
+{
+  padding: 0px;
+}
+
+  #Tecnology .texto ul li {
+    list-style: none;
+    text-align: center;
+    font-size: 13px;
+    margin: 10px auto;
+    font-weight: 900;
+    width: 250px;
+}
+#Tecnology .texto ul .medio
+{
+  border-top: 2px dotted black;
+    color: black;
+    border-bottom: 2px dotted black;
+    padding: 7px;
+}
+#Tecnology .texto a{
+  text-decoration: none;
+  color:black;
+  border:1.4px solid black;
+  border-radius: 100px;
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 5px ;
+  width:200px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* conexion */
+#conexion  > div >  img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+#conexion 
+{
+  position: relative;
+}
+.aereo
+{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  background: #003664d9;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 90px;
+  color: white;
+}
+.aereo h1{
+  font-size: 16px;
+  font-weight: 900;
+  text-align: left;
+}
+.aereo p{
+  font-size: 12px;
+}
+.aereo .imagenes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.aereo a
+{
+  text-align: center;
+    width: 60%;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid white;
+    color: white;
+    padding: 5px;
+    border-radius: 100px;
+    cursor: pointer;
+
+}
+
+img.corchete2 {
+  width: 10px!important;
+  height: auto;
+  position: absolute;
+  right: 15%;
+  margin: 0;
+  top: 0px;
+}
+img.corchete1 {
+  width: 10px!important;
+  height: auto;
+  position: absolute;
+  left: 15%;
+  transform: rotate(180deg);
+}
+/* medias query responsive Steve */
+
+@media (orientation: landscape) {
+  /* landscape styles */
+  #Performance {
+    background-image: url(../images/seccion02/fondo2.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.botones
+{
+  width: 100%;
+  background: #000000b0;
+  bottom: 13%;
+}
+.botones a
+{
+  width: 25%;
+}
+.botones p
+{
+  width: 16%;
+}
+#Performance .texto
+{
+  width: 50%;
+}
+#Performance .texto > div .datos
+{
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  font-size: 12px
+}
+#Performance .frontal
+{
+  display: none;
+}
+#Performance .trasera
+{max-width: 75px;}
+#estacionamiento,
+#Tecnology
+{
+  height: auto;
+}
+#estacionamiento ul li img
+{
+  width: 35px;
+}
+#estacionamiento ul 
+{
+  margin-bottom: 0px;
+}
+#estacionamiento .texto{
+  align-items: center;
+}
+#estacionamiento a
+{
+  margin-bottom: 10px;
+}
+.aereo a
+{
+  width: 40%;
+}
+}
+
+
+@media (orientation: portrait) {
+  /* portrait styles */
+  #Performance {
+    background-image: url(../mobil/sec02.jpg);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    align-items: flex-end;
+}
+#Performance .trasera,
+#Performance .frontal{
+  display: none;
+}
+.botones
+{
+  bottom: 6%;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.botones a
+{
+  width: 50%;
+    margin: 15px auto 0px;
+}
+.botones p
+{
+  width:45%;
+  border:0px!important;
+  height: 55px;
+}
+#slide .cotainer
+{
+  width: 100%;
+  left: 0px;
+  right: 0px;
+}
+
+#Performance .texto
+{
+  position: relative;
+    top: inherit;
+    width: 90%;
+    left: inherit;
+    right: inherit;
+    transform: inherit;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#Performance .texto > div .datos
+{
+  width: 65px;
+  height:65px;
+}
+#estacionamiento ul li img
+{
+  max-width: 35px;
+}
+#estacionamiento ul 
+{
+  margin-bottom: 0px;
+}
+#estacionamiento a
+{
+  margin:0 auto;
+}
+#Tecnology .col-xl-4.col-12
+{
+  margin-top: 20px;
+}
+#Tecnology .col-xl-4.col-12 h1
+{
+  text-align: center;
+}
+.aereo{
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 40px;
+  justify-content: center;
+    align-items: center;
+}
+.aereo a
+{
+  width:90%;
+  height: 40px;
+}
+img.corchete1
+{
+  left: 7%;
+}
+img.corchete2
+{
+  right: 7%;
+}
 }
